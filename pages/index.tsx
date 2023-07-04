@@ -12,7 +12,7 @@ function App() {
   const loadScript = useCallback((url: string) => {
     const firstScript = window.document.getElementsByTagName('script')[0];
     const newScript = window.document.createElement('script');
-    newScript.src = url;
+    newScript.src = `${url}&language=ko`;
     newScript.async = true;
     newScript.defer = true;
     firstScript?.parentNode?.insertBefore(newScript, firstScript);
