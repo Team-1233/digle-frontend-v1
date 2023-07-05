@@ -91,7 +91,6 @@ function App() {
     );
   }, [initMap, loadScript]);
 
-
   return (
     <div>
       <S.MapContainer ref={mapElement} />
@@ -118,9 +117,11 @@ function App() {
                 현재 울진군까지 확산 중
               </S.Description>
             </S.DescArea>
-            <S.BtnContainer href="native://transition">
-              <S.DonateBtn>후원하기</S.DonateBtn>
-            </S.BtnContainer>
+            <S.Container>
+              <S.BtnContainer href="native://transition">
+                <S.DonateBtn>후원하기</S.DonateBtn>
+              </S.BtnContainer>
+            </S.Container>
           </S.MarkerContent>
         </S.MarkerModal>
       )}

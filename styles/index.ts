@@ -75,6 +75,7 @@ export const BtnContainer = styled.a`
   width: 140px;
   height: 35px;
   margin: 0 auto;
+  text-align: center;
 `;
 
 export const DonateBtn = styled.button`
@@ -85,3 +86,8 @@ export const DonateBtn = styled.button`
   border: none;
   border-radius: 20px;
 `;
+
+export const Container = styled.div`
+  text-align: center;
+  margin-top: 30px;
+`
