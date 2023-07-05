@@ -91,3 +91,32 @@ export const Container = styled.div`
   text-align: center;
   margin-top: 30px;
 `
+
+export const PaymentWidget = styled.div`
+  
+`
+
+export const Footer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 24px;
+`
+
+export const PriceInfo = styled.p`
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+`
+
+export const PurchaseBtn = styled.button`
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFB84D;
+  font-weight: 500;
+`
+
+
