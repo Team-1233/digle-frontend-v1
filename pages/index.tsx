@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import * as S from "../styles/index";
 import fire from "../public/fire.svg";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 declare global {
   interface Window {
@@ -27,13 +28,6 @@ function App() {
     if (!mapElement.current || !google) return;
 
     const disasterLocation = { lat: 37.0545, lng: 128.5455 };
-    const incheonWeather = { lat: 37.4562557, lng: 126.7052062 };
-    const seoulWeather = { lat: 37.566535, lng: 126.9779692 };
-    const daejeonWeather = { lat: 36.3504119, lng: 127.3845475 };
-    const ulsanWeather = { lat: 35.5383773, lng: 129.3113596 };
-    const busanWeather = { lat: 35.1795543, lng: 129.0756416 };
-    const gwangjuWeather = { lat: 35.1595454, lng: 126.8526012 };
-    const jejuWeather = { lat: 33.4890113, lng: 126.4983023 };
 
     const map = new google.maps.Map(mapElement.current, {
       zoom: 6.7,
@@ -48,18 +42,12 @@ function App() {
       anchor: new google.maps.Point(25, 50),
     };
 
-    const sunnyIcon = {
-      url: "https://cdn-icons-png.flaticon.com/512/136/136723.png",
-      scaledSize: new google.maps.Size(50, 50),
-      origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(25, 50),
-    };
-
     const marker = new google.maps.Marker({
       position: disasterLocation,
-      map,
+      map: map,
       icon: fireMarkerIcon,
     });
+
 
     marker.addListener("click", handleClick);
 
