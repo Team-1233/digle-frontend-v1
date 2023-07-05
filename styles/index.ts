@@ -38,9 +38,7 @@ export const MarkerModal = styled(Modal)`
   outline: none;
 `;
 
-export const MarkerContent = styled.div`
-
-`;
+export const MarkerContent = styled.div``;
 
 export const TitleList = styled.ul`
   list-style: none;
@@ -48,44 +46,42 @@ export const TitleList = styled.ul`
   padding: 0;
   margin-left: 20px;
   margin-top: 20px;
-`
+`;
 
-export const Lists = styled.li`
-  
-`
+export const Lists = styled.li``;
 
 export const Title = styled.p`
   font-weight: 600;
   font-size: 18px;
   margin-left: 15px;
   margin-top: 0px;
-`
+`;
 
 export const DescArea = styled.div`
   width: 300px;
   height: 42px;
   margin-left: 20px;
   margin-top: -10px;
-`
+`;
 
 export const Description = styled.p`
   font-size: 17px;
-  color: #003D68;
+  color: #003d68;
   margin: 0;
-`
+`;
 
-export const BtnContainer = styled.div`
+export const BtnContainer = styled.a`
   padding-top: 40px;
   width: 140px;
   height: 35px;
   margin: 0 auto;
-`
+`;
 
 export const DonateBtn = styled.button`
   width: 140px;
   height: 35px;
-  background-color: #2E99C7;
+  background-color: #2e99c7;
   color: white;
   border: none;
   border-radius: 20px;
-`
+`;

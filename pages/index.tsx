@@ -35,7 +35,6 @@ function App() {
     const gwangjuWeather = { lat: 35.1595454, lng: 126.8526012 };
     const jejuWeather = { lat: 33.4890113, lng: 126.4983023 };
 
-
     const map = new google.maps.Map(mapElement.current, {
       zoom: 6.7,
       center: disasterLocation,
@@ -56,13 +55,11 @@ function App() {
       anchor: new google.maps.Point(25, 50),
     };
 
-
     const marker = new google.maps.Marker({
       position: disasterLocation,
       map,
       icon: fireMarkerIcon,
     });
-
 
     marker.addListener("click", handleClick);
 
@@ -94,6 +91,7 @@ function App() {
     );
   }, [initMap, loadScript]);
 
+
   return (
     <div>
       <S.MapContainer ref={mapElement} />
@@ -120,7 +118,7 @@ function App() {
                 현재 울진군까지 확산 중
               </S.Description>
             </S.DescArea>
-            <S.BtnContainer>
+            <S.BtnContainer href="native://transition">
               <S.DonateBtn>후원하기</S.DonateBtn>
             </S.BtnContainer>
           </S.MarkerContent>
