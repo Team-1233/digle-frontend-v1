@@ -25,5 +25,8 @@
     "react-modal": "^3.16.1",
     "styled-components": "^6.0.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1"
   }
 }
